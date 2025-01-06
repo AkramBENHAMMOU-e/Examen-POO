@@ -1,0 +1,9 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<VBox spacing="10" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.proj.examen.controller.SelectionRepasController" stylesheets="@styles.css">
+    <Label text="Sélectionnez un repas" styleClass="label-title"/>
+    <ComboBox fx:id="platsComboBox" promptText="Choisissez un plat"/>
+    <Button text="Suivant" onAction="#handleSuivant"/>
+</VBox>

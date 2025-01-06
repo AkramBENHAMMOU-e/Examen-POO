@@ -1,0 +1,24 @@
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<VBox spacing="20" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.proj.examen.controller.SelectionIngredientsSupplementController" stylesheets="@styles.css">
+    <Label text="Personnalisez votre repas" styleClass="label-title"/>
+    <Label fx:id="platLabel" styleClass="label"/>
+
+    <HBox spacing="20">
+        <VBox spacing="10">
+            <Label text="Ingrédients disponibles :" styleClass="label"/>
+            <ListView fx:id="ingredientsListView" prefWidth="200" prefHeight="150"/>
+        </VBox>
+        <VBox spacing="10">
+            <Label text="Suppléments disponibles :" styleClass="label"/>
+            <ListView fx:id="supplementsListView" prefWidth="200" prefHeight="150"/>
+        </VBox>
+    </HBox>
+
+    <Label text="Total :" styleClass="label"/>
+    <Label fx:id="totalLabel" styleClass="label-title"/>
+    <Button text="Enregistrer" onAction="#handleEnregistrer"/>
+</VBox>

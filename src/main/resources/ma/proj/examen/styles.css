@@ -1,0 +1,78 @@
+/* styles.css */
+
+/* Style général de l'application */
+.root {
+    -fx-background-color: #f4f4f4; /* Fond clair */
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+/* Style des labels */
+.label {
+    -fx-text-fill: #333333; /* Couleur du texte */
+    -fx-font-size: 14px;
+}
+
+.label-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50; /* Couleur foncée */
+}
+
+/* Style des ComboBox */
+.combo-box {
+    -fx-background-color: #ffffff; /* Fond blanc */
+    -fx-border-color: #bdc3c7; /* Bordure grise */
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #333333;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: #3498db; /* Bouton bleu */
+}
+
+.combo-box .arrow {
+    -fx-background-color: #ffffff; /* Flèche blanche */
+}
+
+/* Style des boutons */
+.button {
+    -fx-background-color: #3498db; /* Fond bleu */
+    -fx-text-fill: #ffffff; /* Texte blanc */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #2980b9; /* Fond bleu foncé au survol */
+}
+
+/* Style des ListView */
+.list-view {
+    -fx-background-color: #ffffff; /* Fond blanc */
+    -fx-border-color: #bdc3c7; /* Bordure grise */
+    -fx-border-radius: 5px;
+}
+
+.list-cell {
+    -fx-padding: 10px;
+    -fx-background-color: #ffffff; /* Fond blanc */
+    -fx-text-fill: #333333; /* Texte foncé */
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: #3498db; /* Fond bleu pour la sélection */
+    -fx-text-fill: #ffffff; /* Texte blanc pour la sélection */
+}
+
+/* Style des HBox et VBox */
+.hbox, .vbox {
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+}
